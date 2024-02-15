@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserare Film</title>
+    <link rel="stylesheet" href="cinema.css">
+</head>
+<body>
+    <header>
+    <h1>Inserare Film</h1>
+    </header>
+
+    <form action="inserare_film.php" method="post">
+        <label for="denumire">Denumire Film:</label>
+        <input type="text" id="denumire" name="denumire" required>
+
+        <label for="durata">Durata (minute):</label>
+        <input type="number" id="durata" name="durata" required>
+
+        <label for="numarlocuri">Numar Locuri:</label>
+        <input type="number" id="numarlocuri" name="numarlocuri" required>
+
+        <label for="categorie">Categorie:</label>
+        <input type="text" id="categorie" name="categorie" required>
+
+        <label for="tip">Tip Film (3D, 2D, 4DX, VIP):</label>
+        <select id="tip" name="tip" required>
+            <option value="3D">3D</option>
+            <option value="2D">2D</option>
+            <option value="4DX">4DX</option>
+            <option value="VIP">VIP</option>
+        </select>
+
+        <label for="difuzare">Data:</label>
+        <input type="date" id="difuzare" name="difuzare" required>
+
+        <label for="ora">Ora:</label>
+        <input type="ora" id="ora" name="ora" required>
+
+        <button type="submit">Inserare Film</button>
+    </form>
+
+</body>
+</html>

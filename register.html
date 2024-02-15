@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creează Cont</title>
+    <link rel="stylesheet" href="cinema.css">
+</head>
+<body>
+    <header>
+        <h1>CINEMA</h1>
+    </header>
+    <main>
+        <form action="register.php" method="post">
+            <label for="firstName">Fist Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="surname">Last name:</label>
+            <input type="text" id="surname" name="surname" required>
+           
+            <label for="categorie_varsta">Age:</label>
+            <select id="categorie_varsta" name="categorie_varsta" required>
+                <option value="Child">Child (0-3)</option>
+                <option value="Student">Student</option>
+                <option value="Adult">Adult</option>
+                <option value="Senior">Senior</option>
+            </select>
+            
+
+            <label for="Phone">Phone:</label>
+            <input type="text" id="Phone" name="Phone" required>
+
+            <label for="Email">Username:</label>
+            <input type="text" id="Email" name="Email" required>
+
+            <label for="newPassword">Password:</label>
+            <input type="password" id="newPassword" name="newPassword" required>
+
+            
+            <button type="submit">Creează Cont</button>
+        </form>
+        <p>Ai deja un cont? <a href="login.html">Conectează-te acum</a>.</p>
+    </main>
+</body>
+</html>
